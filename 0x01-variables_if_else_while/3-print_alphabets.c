@@ -5,15 +5,15 @@
  */
 int main(void)
 {
-	char low = 'a';
-	char upp = 'A';
+	char low = 97;
+	char upp = 65;
 
-	while (low <= 'z')
+	while (low <= 122)
 	{
 		putchar(low);
 		low++;
 	}
-	while (upp <= 'Z')
+	while (upp <= 90)
 	{
 		putchar(upp);
 		upp++;
