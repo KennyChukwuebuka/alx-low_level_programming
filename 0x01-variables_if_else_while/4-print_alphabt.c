@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-	char c = 'a';
+	char c = 97;
 
-	while (c <= 'z')
+	while (c <= 122)
 	{
-		if (c != 'q' && c != 'e')
+		if (c != 101 && c != 113)
 		{
 			putchar(c);
 		}
