@@ -5,18 +5,16 @@
  */
 int main(void)
 {
-	int my_num;
+	int i;
+	int j;
 
-	for (my_num = 0; my_num <= 15; my_num++)
+	for (i = 48; i <= 57; i++)
 	{
-		if (my_num < 10)
-		{
-			putchar(my_num + '0');
-		}
-		else
-		{
-			putchar(my_num - 10 + 'a');
-		}
+		putchar(i);
+	}
+	for (j = 97; j <= 102; j++)
+	{
+		putchar(j);
 	}
 	putchar('\n');
 	return (0);
