@@ -1,32 +1,37 @@
 #include <stdio.h>
 /**
- * main - print combination of three digits
+ * main - Print combination of digits
  * Return: 0
  */
 int main(void)
-{
-	int m, n, o;
-
-	for (m = 48; m < 58; m++)
-	{
-		for (n = 49; n < 58; n++)
-		{
-			for (o = 50; 0 < 58; o++)
-			{
-				if (o > n && n > m)
+{       
+        int m, n, o;
+        int putcharCount = 0;
+        
+        for (m = 48; m < 58; m++)
+        {       
+                for (n = m + 1; n < 58; n++)
+                {       
+                        for (o = n + 1; o < 58; o++)
+                        {       
+                                putchar(m);
+                                putchar(n);
+                                putchar(o);
+                                putcharCount +=3;
+                                if (putcharCount < 6)
 				{
-					putchar(m);
-					putchar(n);
-					putchar(o);
-					if (m != 55 || n != 56)
-					{
-						putchar(',');
-						putchar(' ');
-					}
+					putchar(',');
+					putchar(' ');
+					putcharCount += 2;
+				}
+				else
+				{
+					putchar('\n');
+					return 0;
 				}
 			}
 		}
 	}
 	putchar('\n');
-	return (0);
+	return 0;
 }
