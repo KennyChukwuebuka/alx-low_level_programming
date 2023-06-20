@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * main - This program prints putchar
- * Remain:0
+ * Return:0
  */
-void main(void)
+int main(void)
 {
 	char *c = "_putchar";
 
