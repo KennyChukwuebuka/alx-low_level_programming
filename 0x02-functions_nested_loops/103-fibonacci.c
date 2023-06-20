@@ -5,23 +5,16 @@
  */
 int main(void)
 {
-	int n;
-	unsigned long int i, j, k, l;
+	unsigned long int i = 1, j = 2, k, l = 0;
 
-	i = 1;
-	j = 2;
-	k = 0;
-
-	for (n = 1; n <= 33; n++)
+	while (i < 4000000)
 	{
-		if (i < 4000000 && (j % 2) == 0)
-		{
-			l = l + i;
-		}
+		if (i % 2 == 0)
+			l += i;
 		k = i + j;
+		i = j;
 		j = k;
 	}
 	printf("%lu\n", l);
 	return (0);
 }
-
