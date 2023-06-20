@@ -3,7 +3,7 @@
  * main - This program prints putchar
  * Remain:0
  */
-int main(void)
+void main(void)
 {
 	char *c = "_putchar";
 
