@@ -16,7 +16,7 @@ int main(void)
 
 	printf("%lu", befa);
 
-	for (i = 1; i < 91; i++)
+	for (i = 3; i < 98; i++)
 	{
 		printf(", %lu", afta);
 		afta += befa;
