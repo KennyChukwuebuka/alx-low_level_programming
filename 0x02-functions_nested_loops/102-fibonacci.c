@@ -5,21 +5,20 @@
  */
 int main(void)
 {
-	int co;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	int count;
+	unsigned long fib1 = 1, fib2 = 2, fib_sum;
 
-	for (co = 0; co < 50; co++)
-	{
-		sum = fib1 + fib2;
-		printf("%lu", sum);
+	printf("%lu, %lu", fib1, fib2)
 
-		fib1 = fib2;
-		fib2 = sum;
+		for (count = 3; count <= 98; count++)
+		{
+			fib_sum = fib1 + fib2;
+			printf(", %lu", fib_sum);
 
-		if (co == 49)
-			printf("\n");
-		else
-			printf(", ");
-	}
+			fib1 = fib2;
+			fib2 = fib_sum;
+		}
+	printf("\n");
+
 	return (0);
 }
