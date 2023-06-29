@@ -3,9 +3,9 @@
 
 /**
  * print_buffer - Prints a buffer
- * @b: bytes
- * @size: content of size
- * Return: buffer
+ * @b: buffer
+ * @size: size
+ * Return: void
  */
 
 void print_buffer(char *b, int size)
@@ -29,7 +29,7 @@ void print_buffer(char *b, int size)
 			if (k < j)
 				printf("%02x", *(b + i + k));
 			else
-				printf(" ");
+				printf("  ");
 			if (k % 2)
 			{
 				printf(" ");
