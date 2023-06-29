@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strcat - Script to concat strings
@@ -9,16 +10,6 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int length = 0, i;
-
-	while (dest[length])
-		length++;
-
-	for (i = 0; src[i] != 0; i++)
-	{
-		dest[length] = src[i];
-		length += 1;
-	}
-	dest[length] = '\0';
+	strcat(dest, src);
 	return (dest);
 }
