@@ -1,1 +1,1 @@
-This is 0x07. C - Even more pointers, arrays and strings
+This is 0x07. C - Even more pointers, arrays and strings and is great
