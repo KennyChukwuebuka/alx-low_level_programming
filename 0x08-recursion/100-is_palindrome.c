@@ -4,9 +4,9 @@ int natural_check(char *s, int i, int len);
 int _strlen_recursion(char *s);
 
 /**
- * is_palindrome - func that ret 1 if string is palindrom
+ * is_palindrome - function to check if string is palindrome
  * @s: string to rev
- * Return 1 if palindrome or 0 if not
+ * Return: 1 if palindrome or 0 if not
  */
 
 int is_palindrome(char *s)
