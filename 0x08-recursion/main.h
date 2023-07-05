@@ -6,7 +6,7 @@ int _strlen_recursion(char *s);
 int factorial(int n);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
-int _sqrt_recursion_natural(int n, int s, int y);
+int _sqrt_recursion_natural(unsigned long int n, int s, int y);
 int is_prime_number(int n);
 int real_prime(int n, int i);
 int is_palindrome(char *s);

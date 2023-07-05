@@ -8,14 +8,16 @@
  * Return: 0
  */
 
-int _sqrt_recursion_natural(int n, int s, int y)
+int _sqrt_recursion_natural(unsigned long int n, int s, int y)
 {
-	 int xnd = (s + y) / 2;
+	unsigned long int xnd = (s + y) / 2;
 
 	if (s > y)
 	{
 		return (-1);
 	}
+
+	/*unsigned long int xnd = (s + y) / 2;*/
 
 	if (xnd * xnd == n)
 	{
