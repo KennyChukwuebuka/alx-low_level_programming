@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	int count;
 
@@ -21,10 +21,5 @@ int main(int argc, char *argv[])
 			printf("argv[%d] = %s\n", count, argv[count]);
 		}
 	}
-	else
-	{
-		printf("0");
-	}
-
 	return (0);
 }
