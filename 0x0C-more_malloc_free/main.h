@@ -10,7 +10,6 @@ char *_memset(char *s, char b, unsigned int n);
 int *array_range(int min, int max);
 int is_digit(char *s);
 int _strlen(char *s);
-int main(int argc, char *argv[]);
 int _putchar(char c);
 
 #endif
