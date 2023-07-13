@@ -27,7 +27,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (nStr == NULL)
 		return (NULL);
 
-	memcpy(nStr, s1, len1);
+	memcpy(nStr, s1, len1 + 1);
 	memcpy(nStr + len1, s2, len2);
 
 	nStr[len1 + len2] = '\0';
