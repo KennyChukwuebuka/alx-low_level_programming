@@ -3,9 +3,9 @@
 
 /**
  * init_dog - structure of dog
- @d: pointer to dog
+ * @d: pointer to dog
  * @name: name of dog
- * @age of dog
+ * @age: age of dog
  * @owner: owner of dog
  */
 
