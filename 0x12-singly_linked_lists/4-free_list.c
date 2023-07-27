@@ -3,7 +3,7 @@
 /**
  * free_list - function that frees
  * @head: param
- * 
+ *
  * Return: nothing
  */
 
