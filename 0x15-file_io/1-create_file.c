@@ -29,4 +29,4 @@ int create_file(const char *filename, char *text_content)
 
         close(file_desc);
         return (1);
-}i
+}
