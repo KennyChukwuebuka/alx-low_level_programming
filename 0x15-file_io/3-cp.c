@@ -17,8 +17,8 @@ void copy_file(char *file_comingfrom, char *file_goingto)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_comingfrom);
 		exit(98);
 	}
-	fd_goingto = open(file_goingto, O_WRONLY | O_CREAT |
-			O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
+	fd_goingto = open(file_goingto, O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, 0664);
+			/*O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);*/
 	if (fd_goingto == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_goingto);
@@ -56,7 +56,8 @@ int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: %s file_from_to\n", argv[0]);
+		/*dprintf(STDERR_FILENO, "Usage: %s file_from_to\n", argv[0]);*/
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to");
 		exit(97);
 	}
 	copy_file(argv[1], argv[2]);
