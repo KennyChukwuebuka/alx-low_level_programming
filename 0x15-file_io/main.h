@@ -10,6 +10,7 @@
 #include <errno.h>
 #include <string.h>
 #include <stdint.h>
+#include <elf.h>
 
 #define ELF_MAGIC_SIZE 4
 
