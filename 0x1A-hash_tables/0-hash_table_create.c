@@ -11,10 +11,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 	unsigned int i;
 	hash_table_t *newTable = malloc(sizeof(hash_table_t));
 
-	if (newTable == NULL) 
+	if (newTable == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
-		return NULL;
+		return (NULL);
 	}
 
 	newTable->size = size;
@@ -22,7 +22,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (newTable->array == NULL)
 	{
 		fprintf(stderr, "Error: malloc failed\n");
-		return NULL;
+		return (NULL);
 	}
 	for (; i < size; i++)
 	{
