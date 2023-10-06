@@ -28,7 +28,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 }
 
 /**
- * set_spair - function mallocs a key/value 
+ * set_spair - function mallocs a key/value
  * pair to the sorted hash table.
  * @key: the key, a string that cannot be empty.
  * @value: the value associated with the key
@@ -250,7 +250,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 }
 
 /**
- * shash_table_print - function prints key/value 
+ * shash_table_print - function prints key/value
  * pairs in sorted hash table order.
  * @ht: the sorted hash table.
  */
