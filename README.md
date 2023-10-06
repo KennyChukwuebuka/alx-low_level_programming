@@ -1,1 +1,1 @@
-ALX SE low_level_progamming language
+ALX SE low_level_programming language
