@@ -46,7 +46,7 @@ void hash_table_delete(hash_table_t *ht);
 
 hash_node_t *set_keyvalue(const char *key, const char *value);
 int set_keyvalue_only(hash_table_t *ht, const char *key,
-		  const char *value, unsigned long int index);
+		const char *value, unsigned long int index);
 
 
 /*-----------------------------------------------------------------*/
@@ -66,11 +66,11 @@ int set_keyvalue_only(hash_table_t *ht, const char *key,
  */
 typedef struct shash_node_s
 {
-     char *key;
-     char *value;
-     struct shash_node_s *next;
-     struct shash_node_s *sprev;
-     struct shash_node_s *snext;
+	char *key;
+	char *value;
+	struct shash_node_s *next;
+	struct shash_node_s *sprev;
+	struct shash_node_s *snext;
 } shash_node_t;
 
 /**
@@ -85,10 +85,10 @@ typedef struct shash_node_s
  */
 typedef struct shash_table_s
 {
-     unsigned long int size;
-     shash_node_t **array;
-     shash_node_t *shead;
-     shash_node_t *stail;
+	unsigned long int size;
+	shash_node_t **array;
+	shash_node_t *shead;
+	shash_node_t *stail;
 } shash_table_t;
 
 
