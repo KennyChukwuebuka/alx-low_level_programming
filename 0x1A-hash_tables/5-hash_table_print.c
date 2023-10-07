@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print - function that prints key/value 
+ * hash_table_print - function that prints key/value
  * pairs in hash table array order.
  * @ht: the hash table.
  */
