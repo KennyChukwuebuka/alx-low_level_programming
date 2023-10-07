@@ -44,6 +44,16 @@ char *hash_table_get(const hash_table_t *ht, const char *key);
 void hash_table_print(const hash_table_t *ht);
 void hash_table_delete(hash_table_t *ht);
 
+hash_node_t *set_keyvalue(const char *key, const char *value);
+int set_keyvalue_only(hash_table_t *ht, const char *key,
+		  const char *value, unsigned long int index);
+
+
+/*-----------------------------------------------------------------*/
+/*Advance Task*/
+/*------------------------------------------------------------------*/
+
+
 /**
  * struct shash_node_s - Node of a sorted hash table
  *
@@ -88,4 +98,6 @@ char *shash_table_get(const shash_table_t *ht, const char *key);
 void shash_table_print(const shash_table_t *ht);
 void shash_table_print_rev(const shash_table_t *ht);
 void shash_table_delete(shash_table_t *ht);
+
+
 #endif /*hash_tables.h*/
